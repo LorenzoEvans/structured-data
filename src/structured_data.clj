@@ -1,13 +1,21 @@
 (ns structured-data)
 
+(defn hypotenuse [x y]
+  (let [xx (* x x)
+        yy (* y y)]
+    (Math/sqrt (+ xx yy)))) 
+  
 (defn do-a-thing [x]
-  :-)
+  (let [xx (* x 2)]
+    (Math/[pow xx xx])))
 
 (defn spiff [v]
-  :-)
+  (let [fst (get x 0)
+        thrd (get x 2)]
+    (+ fst thrd)))
 
 (defn cutify [v]
-  :-)
+  (conj v "<3"))
 
 (defn spiff-destructuring [v]
   :-)
